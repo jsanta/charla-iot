@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="Keywords" content="prototipo, aplicación móvil, desarrollo, sensores, charla, uai, Universidad Adolfo Ibañez" />
+    <meta name="Description" content="Charla: Prototipado rápido de aplicaciones móviles. Caso Práctico: Monitor de sensores en tiempo real" />
+    <meta name="author" content="José Ignacio Santa Cruz - http://amanecible.com" />
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <title></title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fade.css" rel="stylesheet" type="text/css" />
+    <link href="css/jmpress-slides.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="jmpress" data-template="auto">
+
+        <section class="first-slide">
+            <header><img src="img/uai.png" class="pull-right img-responsive" /></header>
+            <img src="img/afiche.jpg" />
+            <h1>Charla: prototipado rápido de aplicaciones móviles</h1>
+            <h2>Caso práctico: monitor de sensores en <i>"tiempo real"</i></h2>            
+            <div class="row">
+                <div class="col-md-5">
+                    <p><b>Expone:</b>
+                        <br /> José Ignacio Santa Cruz
+                        <br /><small> Ingeniero de Desarrollo - Solem</small></p>
+                </div>
+                <div class="col-md-4">
+                    <br />
+                    <a href="http://www.solem.cl"><img src="img/solem.png" alt="Solem S.A." class="img-responsive" /></a>
+                </div>
+                <div class="col-md-2"><img src="img/iuai.png" alt="iUAI" /></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>José Ignacio Santa Cruz <small>(ese soy yo :) )</small></h2>
+            <ul data-jmpress="fade">
+                <li>Ingeniero informático</li>
+                <li>Desde 1995 trabajando en desarrollos web <small>(principalmente)</small></li>
+                <li>Actualmente trabajando para Solem como Ingeniero de desarrollo, especialista en UI-UX.</li>
+            </ul>
+            <h3 data-jmpress="fade">¿Qué conozco?</h3>
+            <div class="row" data-jmpress="fade">
+                <div class="col-md-6">
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript: jQuery, Angular.js, Node.js</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>y algunas <i>"otras cosas"</i>...</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h1>El problema <small>(bajo el contexto de esta charla)</small></h1>
+            <hr />
+            <p data-jmpress="fade">Una aplicación de monitoreo de sensores de temperatura para un viñedo.</p>
+            <p data-jmpress="fade">Tenemos varios sensores, ubicados en lugares estratégicos de cada planta, tierra, tallo, hojas, más un sensor de control.</p>
+            <p data-jmpress="fade"><b>La idea:</b> Recibir la lectura de cada sensor en tiempo real.</p>
+            <p data-jmpress="fade">Los inversores se muestran interesados en el proyecto, pero no quieren quedarse con las buenas intenciones de una presentación en papel.</p>
+            <p data-jmpress="fade" class="center"> <b>¡Ellos quieren ver algo que funcione!</b></p>
+        </section>
+
+        <section>
+            <h1>El prototipo</h1>
+            <ul>
+                <li data-jmpress="fade">Contrario a lo que muchos pueden creer, es <i>"algo más"</i> que el dibujo de las pantallas.</li>
+                <li data-jmpress="fade">De hecho dibujar las pantallas es la parte <i>"fácil"</i>, pero es <b>solamente</b> un punto de partida.</li>
+                <li data-jmpress="fade">El prototipo debe:
+                    <ul>
+                        <li data-jmpress="fade">Ser cercano al producto final.</li>
+                        <li data-jmpress="fade">Responder al requerimiento, <i>ie</i>: <b>funcionar</b>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Dibujando el prototipo</h1>
+            <ul>
+                <li data-jmpress="fade">Podemos hacerlo con lápiz y papel, o pizarra y plumón.</li>
+                <li data-jmpress="fade">Importante:
+                    <ul>
+                        <li data-jmpress="fade">Debe existir <span class="strike">absoluta</span> claridad respecto a lo que necesitamos.</li>
+                        <li data-jmpress="fade">La aplicación debe ser simple.</li>
+                        <li data-jmpress="fade">La aplicación debe ser <i>"rápida de desarrollar"</i>.</li>
+                    </ul>
+                </li>
+                <li data-jmpress="fade">Vamos a utilizar una herramienta web de uso gratuito:
+                    <a href="moqups.com">Moqups</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="center">
+            <h1 title="mientras tanto dibujamos el prototipo">...</h1>
+            <hr />
+            <div class="row" data-jmpress="fade">
+                <div class="col-md-10 col-md-offset-1">
+                    <img src="img/mockup.png" class="img-responsive" />
+                </div>
+            </div>
+            <p data-jmpress="fade">Esto <b>NO ES</b> el prototipo.</p>
+            <!-- Aquí se afina el prototipo, pero no voy a incluir explícitamente el proceso en la presentación -->
+        </section>
+
+        <section>
+            <h1>Acercándonos al prototipo</h1>
+            <ul>
+                <li data-jmpress="fade">Tenemos un dibujo, pero necesitamos una aplicación.</li>
+                <li data-jmpress="fade">Vamos a utilizar otra herramienta web de uso gratuito:
+                    <a href="http://creator.ionic.io">Ionic Creator</a></li>
+            </ul>
+            <div class="row" data-jmpress="fade">
+                <div class="col-md-8 col-md-offset-2">
+                    <a href="http://ionicframework.com/"><img src="img/ionic.png" class="img-responsive" /></a>
+                </div>
+            </div>
+            <!-- Aquí se habla un poco de Ionic como plataforma, y otras alternativas -->
+        </section>
+
+        <section class="center">
+            <h1 title="mientras tanto construimos el casi prototipo">...</h1>
+            <hr />
+            <div class="row" data-jmpress="fade">
+                <div class="col-md-10 col-md-offset-1">
+                    <img src="img/prototype.png" class="img-responsive" />
+                </div>
+            </div>
+            <p data-jmpress="fade">Esto <b>es casi</b> el prototipo <small>(casi)</small>.</p>
+            <!-- Aquí se explica porqué es casi el prototipo. -->
+        </section>
+
+        <section>
+            <h1>Haciendo que el prototipo <i>"funcione"</i></h1>
+            <ul>
+                <li data-jmpress="fade"> Esta es la parte <i>"no sencilla"</i> de la construcción de un prototipo.</li>
+                <li data-jmpress="fade">Necesitamos que:
+                    <ul>
+                        <li data-jmpress="fade" data-jmpress="fade">Existan varios sensores.</li>
+                        <li data-jmpress="fade">Los sensores actualicen sus valores regularmente.</li>
+                        <li data-jmpress="fade">La aplicación muestre como van cambiando los valores.</li>
+                    </ul>
+                </li>
+        </section>
+
+        <section>
+            <h1>Haciendo que el prototipo <i>"funcione"</i></h1>
+            <li data-jmpress="fade">Vamos a utilizar:
+                <ul>
+                    <li data-jmpress="fade">Una base de datos MySQL para almacenar el histórico de valores registrados por los sensores.</li>
+                    <li data-jmpress="fade">Un backend en NodeJS que consulte regularmente la base de datos y se traiga los valores actualizados.</li>
+                    <li data-jmpress="fade">Protocolo MQTT para comunicar el backend con la aplicación.</li>
+                </ul>
+            </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 title="mientras tanto se muestran los componentes que se utilizarán">...</h1>
+            <hr />
+            <!--<div class="row" data-jmpress="fade">
+                <div class="col-md-8 col-md-offset-2">
+                    <img src="img/diagrama.png" class="img-responsive" />
+                </div>
+            </div>-->
+        </section>
+
+        <section>
+            <h1>Cosas que afinar</h1>
+            <ul>
+                <li data-jmpress="fade">Recordemos que un prototipo es <i>"cercano"</i> al producto final.</li>
+                <li data-jmpress="fade">Eso nos da licencia para omitir algunas cosas, y espacio para poder mejorar muchas otras.</li>
+                <li data-jmpress="fade">El backend no necesariamente tiene que ser el presentado en esta charla.</li>
+                <li data-jmpress="fade">En materia de sensores consideren hardware con capacidades de red. Un Arduino y el correspondiente sensor pueden hacer todo esto y mucho más.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Material de la charla</h1>
+            <ul>
+                <li><a href="http://git.santa.cl/uai/sensormonitor-mockups">Sensor monitor mockups</a></li>
+                <li><a href="http://git.santa.cl/uai/backend-iot">BackEnd IOT</a></li>
+                <li><a href="http://git.santa.cl/uai/frontend-iot">FrontEnd IOT</a></li>
+                <!--<li><a href="http://git.santa.cl/uai/charla-iot">Presentación charla</a></li>-->
+                <li data-jmpress="fade"><b>IMPORTANTE:</b> Para clonar los proyectos desde <a href="http://git.santa.cl/uai">git.santa.cl/uai</a> deberán cambiar la dirección IP <i>192.168.1.30</i> por <i>git.santa.cl</i></i>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Muchas gracias</h1>
+            <br />
+            <br />
+            <br />
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="http://www.solem.cl"><img src="img/solem.png" alt="Solem S.A." class="img-responsive" /></a>
+                </div>
+                <div class="col-md-6 center"><img src="img/iuai.png" alt="iUAI" /></div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-offset-9 col-md-3 ">
+                    <ul class="list-unstyled pull-right">
+                        <li>&nbsp;<span class="correo">j<i class="icon-correo"></i>santa.cl</span></li>
+                        <li><a href="https://twitter.com/jsantacl">@JSantaCL</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jmpress.js"></script>
+    <script src="js/jmpress-slides.js"></script>
+</body>
+
+</html>
