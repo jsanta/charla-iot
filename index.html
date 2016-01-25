@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
 
     <meta name="Keywords" content="prototipo, aplicación móvil, desarrollo, sensores, charla, uai, Universidad Adolfo Ibañez" />
     <meta name="Description" content="Charla: Prototipado rápido de aplicaciones móviles. Caso Práctico: Monitor de sensores en tiempo real" />
@@ -30,9 +30,10 @@
 </head>
 
 <body>
+    <form id="frmSubs" class="pull-right"><label>English subtitles <input type="checkbox" id="chkSubtitles" /></label></form> 
     <div id="jmpress" data-template="auto">
 
-        <section class="first-slide">
+        <section class="first-slide" data-translation="Presentation: Rapid mobile app prototyping<br />Practical case: Real time sensor monitor<br />Speaker: Jose Ignacio Santa Cruz<br />Software engineer at Solem">
             <header><img src="img/uai.png" class="pull-right img-responsive" /></header>
             <img src="img/afiche.jpg" />
             <h1>Charla: prototipado rápido de aplicaciones móviles</h1>
@@ -50,16 +51,22 @@
                 <div class="col-md-2"><img src="img/iuai.png" alt="iUAI" /></div>
             </div>
         </section>
+        
+        <section data-translation="Before starting...">
+            <h2>Antes de empezar...</h2>
+            <hr />
+            <img src="img/tod_motto_(quote).png" class="img-responsive block-center" data-jmpress="fade" />
+        </section>
 
-        <section>
+        <section data-translation="José Ignacio Santa Cruz <small>(that's me :) )</small>">
             <h2>José Ignacio Santa Cruz <small>(ese soy yo :) )</small></h2>
-            <ul data-jmpress="fade">
+            <ul data-jmpress="fade" data-translation="Software engineer. Since 1995 working on web development <small>(mainly)</small>. Currently working at Solem as a software engineer, UI-UX specialist.">
                 <li>Ingeniero informático</li>
                 <li>Desde 1995 trabajando en desarrollos web <small>(principalmente)</small></li>
                 <li>Actualmente trabajando para Solem como Ingeniero de desarrollo, especialista en UI-UX.</li>
             </ul>
-            <h3 data-jmpress="fade">¿Qué conozco?</h3>
-            <div class="row" data-jmpress="fade">
+            <h3 data-jmpress="fade" data-translation="What do I know?">¿Qué conozco?</h3>
+            <div class="row" data-jmpress="fade" data-translation="HTML5, CSS3, JavaScript: jQuery, Angular.js, Node.js, PHP, Java, and some <i>other things...</i>">
                 <div class="col-md-6">
                     <ul>
                         <li>HTML5</li>
@@ -78,112 +85,112 @@
 
         </section>
 
-        <section>
+        <section data-translation="The problem <small>(under this presentations's context)</small>">
             <h1>El problema <small>(bajo el contexto de esta charla)</small></h1>
             <hr />
-            <p data-jmpress="fade">Una aplicación de monitoreo de sensores de temperatura para un viñedo.</p>
-            <p data-jmpress="fade">Tenemos varios sensores, ubicados en lugares estratégicos de cada planta, tierra, tallo, hojas, más un sensor de control.</p>
-            <p data-jmpress="fade"><b>La idea:</b> Recibir la lectura de cada sensor en tiempo real.</p>
-            <p data-jmpress="fade">Los inversores se muestran interesados en el proyecto, pero no quieren quedarse con las buenas intenciones de una presentación en papel.</p>
-            <p data-jmpress="fade" class="center"> <b>¡Ellos quieren ver algo que funcione!</b></p>
+            <p data-jmpress="fade"  data-translation="A sensor monitoring app for vines.">Una aplicación de monitoreo de sensores de temperatura para un viñedo.</p>
+            <p data-jmpress="fade"  data-translation="We got several sensors, each one placed on strategic positions on each plant: ground, stem, leaves, plus a control sensor.">Tenemos varios sensores, ubicados en lugares estratégicos de cada planta, tierra, tallo, hojas, más un sensor de control.</p>
+            <p data-jmpress="fade"  data-translation="<b>The idea:</b> get real time readings from each sensor."><b>La idea:</b> Recibir la lectura de cada sensor en tiempo real.</p>
+            <p data-jmpress="fade"  data-translation="Investors are really interesed in the project, but they don't want to stay with the impression of a paper presentation.">Los inversores se muestran interesados en el proyecto, pero no quieren quedarse con las buenas intenciones de una presentación en papel.</p>
+            <p data-jmpress="fade" class="center"  data-translation="The want to see something that works!"> <b>¡Ellos quieren ver algo que funcione!</b></p>
         </section>
 
-        <section>
+        <section data-translation="The prototype">
             <h1>El prototipo</h1>
             <ul>
-                <li data-jmpress="fade">Contrario a lo que muchos pueden creer, es <i>"algo más"</i> que el dibujo de las pantallas.</li>
-                <li data-jmpress="fade">De hecho dibujar las pantallas es la parte <i>"fácil"</i>, pero es <b>solamente</b> un punto de partida.</li>
-                <li data-jmpress="fade">El prototipo debe:
+                <li data-jmpress="fade" data-translation="Against what many of you may believe, the prototype is <i>something more</i> than just the screen drawings.">Contrario a lo que muchos pueden creer, es <i>"algo más"</i> que el dibujo de las pantallas.</li>
+                <li data-jmpress="fade" data-translation="In fact, drawing the screens it's the easy part, but it is <b>only</b> a starting point.">De hecho dibujar las pantallas es la parte <i>"fácil"</i>, pero es <b>solamente</b> un punto de partida.</li>
+                <li data-jmpress="fade" data-translation="The prototype must:">El prototipo debe:
                     <ul>
-                        <li data-jmpress="fade">Ser cercano al producto final.</li>
-                        <li data-jmpress="fade">Responder al requerimiento, <i>ie</i>: <b>funcionar</b>.</li>
+                        <li data-jmpress="fade" data-translation="Be like a final product.">Ser cercano al producto final.</li>
+                        <li data-jmpress="fade" data-translation="Answer to the app requirements, that is it must work.">Responder al requerimiento, <i>ie</i>: <b>funcionar</b>.</li>
                     </ul>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section  data-translation="Drawing the prototype">
             <h1>Dibujando el prototipo</h1>
             <ul>
-                <li data-jmpress="fade">Podemos hacerlo con lápiz y papel, o pizarra y plumón.</li>
-                <li data-jmpress="fade">Importante:
+                <li data-jmpress="fade" data-translation="We can do it with pencils and paper, or using a whiteboard">Podemos hacerlo con lápiz y papel, o pizarra y plumón.</li>
+                <li data-jmpress="fade" data-translation="Important:">Importante:
                     <ul>
-                        <li data-jmpress="fade">Debe existir <span class="strike">absoluta</span> claridad respecto a lo que necesitamos.</li>
-                        <li data-jmpress="fade">La aplicación debe ser simple.</li>
-                        <li data-jmpress="fade">La aplicación debe ser <i>"rápida de desarrollar"</i>.</li>
+                        <li data-jmpress="fade" data-translation="You must be <strike>fully</strike> certain of what you need.">Debe existir <span class="strike">absoluta</span> claridad respecto a lo que necesitamos.</li>
+                        <li data-jmpress="fade" data-translation="The app must be simple">La aplicación debe ser simple.</li>
+                        <li data-jmpress="fade" data-translation="Developing the app must be fast.">La aplicación debe ser <i>"rápida de desarrollar"</i>.</li>
                     </ul>
                 </li>
-                <li data-jmpress="fade">Vamos a utilizar una herramienta web de uso gratuito:
+                <li data-jmpress="fade" data-translation="We are going to use a free web tool: Moqups">Vamos a utilizar una herramienta web de uso gratuito:
                     <a href="moqups.com">Moqups</a>
                 </li>
             </ul>
         </section>
 
-        <section class="center">
+        <section class="center" data-translation="(meanwhile we draw the prototype)">
             <h1 title="mientras tanto dibujamos el prototipo">...</h1>
             <hr />
             <div class="row" data-jmpress="fade">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1 center">
                     <img src="img/mockup.png" class="img-responsive" />
                 </div>
             </div>
-            <p data-jmpress="fade">Esto <b>NO ES</b> el prototipo.</p>
+            <p data-jmpress="fade" data-translation="This <b>IS NOT</b> the prototype.">Esto <b>NO ES</b> el prototipo.</p>
             <!-- Aquí se afina el prototipo, pero no voy a incluir explícitamente el proceso en la presentación -->
         </section>
 
-        <section>
+        <section data-translation="Getting near the prototype">
             <h1>Acercándonos al prototipo</h1>
             <ul>
-                <li data-jmpress="fade">Tenemos un dibujo, pero necesitamos una aplicación.</li>
-                <li data-jmpress="fade">Vamos a utilizar otra herramienta web de uso gratuito:
+                <li data-jmpress="fade" data-translation="We got a drawing, but we need an app.">Tenemos un dibujo, pero necesitamos una aplicación.</li>
+                <li data-jmpress="fade" data-translation="We are going to use another free web tool: Ionic Creator">Vamos a utilizar otra herramienta web de uso gratuito:
                     <a href="http://creator.ionic.io">Ionic Creator</a></li>
             </ul>
             <div class="row" data-jmpress="fade">
                 <div class="col-md-8 col-md-offset-2">
-                    <a href="http://ionicframework.com/"><img src="img/ionic.png" class="img-responsive" /></a>
+                    <a href="http://ionicframework.com/"><img src="img/ionic.png" class="img-responsive center" /></a>
                 </div>
             </div>
             <!-- Aquí se habla un poco de Ionic como plataforma, y otras alternativas -->
         </section>
 
-        <section class="center">
+        <section class="center"  data-translation="(meanwhile, we build the almost prototype)">
             <h1 title="mientras tanto construimos el casi prototipo">...</h1>
             <hr />
             <div class="row" data-jmpress="fade">
                 <div class="col-md-10 col-md-offset-1">
-                    <img src="img/prototype.png" class="img-responsive" />
+                    <img src="img/prototype.png" class="img-responsive center" />
                 </div>
             </div>
-            <p data-jmpress="fade">Esto <b>es casi</b> el prototipo <small>(casi)</small>.</p>
+            <p data-jmpress="fade"  data-translation="This is <i>almost</i> the prototype.">Esto <b>es casi</b> el prototipo <small>(casi)</small>.</p>
             <!-- Aquí se explica porqué es casi el prototipo. -->
         </section>
 
-        <section>
+        <section data-translation="Making a working prototype">
             <h1>Haciendo que el prototipo <i>"funcione"</i></h1>
             <ul>
-                <li data-jmpress="fade"> Esta es la parte <i>"no sencilla"</i> de la construcción de un prototipo.</li>
-                <li data-jmpress="fade">Necesitamos que:
+                <li data-jmpress="fade" data-translation="This is the hard part of building a prototype."> Esta es la parte <i>"no sencilla"</i> de la construcción de un prototipo.</li>
+                <li data-jmpress="fade" data-translation="We need:">Necesitamos que:
                     <ul>
-                        <li data-jmpress="fade" data-jmpress="fade">Existan varios sensores.</li>
-                        <li data-jmpress="fade">Los sensores actualicen sus valores regularmente.</li>
-                        <li data-jmpress="fade">La aplicación muestre como van cambiando los valores.</li>
+                        <li data-jmpress="fade" data-jmpress="fade" data-translation="One or many sensors.">Existan varios sensores.</li>
+                        <li data-jmpress="fade" data-translation="Sensors updating their values constantly.">Los sensores actualicen sus valores regularmente.</li>
+                        <li data-jmpress="fade"  data-translation="The app showing how the values are updated.">La aplicación muestre como van cambiando los valores.</li>
                     </ul>
                 </li>
         </section>
 
-        <section>
+        <section data-translation="Making a working prototype">
             <h1>Haciendo que el prototipo <i>"funcione"</i></h1>
-            <li data-jmpress="fade">Vamos a utilizar:
+            <li data-jmpress="fade" data-translation="We are going to use">Vamos a utilizar:
                 <ul>
-                    <li data-jmpress="fade">Una base de datos MySQL para almacenar el histórico de valores registrados por los sensores.</li>
-                    <li data-jmpress="fade">Un backend en NodeJS que consulte regularmente la base de datos y se traiga los valores actualizados.</li>
-                    <li data-jmpress="fade">Protocolo MQTT para comunicar el backend con la aplicación.</li>
+                    <li data-jmpress="fade" data-translation="A MySQL database to store the sensor values.">Una base de datos MySQL para almacenar el histórico de valores registrados por los sensores.</li>
+                    <li data-jmpress="fade" data-translation="A NodeJS backend that constantly queries the database and retrieves updated values.">Un backend en NodeJS que consulte regularmente la base de datos y se traiga los valores actualizados.</li>
+                    <li data-jmpress="fade" data-translation="MQTT protocol for the backend-application communication.">Protocolo MQTT para comunicar el backend con la aplicación.</li>
                 </ul>
             </li>
             </ul>
         </section>
 
-        <section>
+        <section data-translation="(meanwhile, all the components to be used are shown)">
             <h1 title="mientras tanto se muestran los componentes que se utilizarán">...</h1>
             <hr />
             <!--<div class="row" data-jmpress="fade">
@@ -193,17 +200,17 @@
             </div>-->
         </section>
 
-        <section>
+        <section data-translation="Things to improve">
             <h1>Cosas que afinar</h1>
             <ul>
-                <li data-jmpress="fade">Recordemos que un prototipo es <i>"cercano"</i> al producto final.</li>
-                <li data-jmpress="fade">Eso nos da licencia para omitir algunas cosas, y espacio para poder mejorar muchas otras.</li>
-                <li data-jmpress="fade">El backend no necesariamente tiene que ser el presentado en esta charla.</li>
-                <li data-jmpress="fade">En materia de sensores consideren hardware con capacidades de red. Un Arduino y el correspondiente sensor pueden hacer todo esto y mucho más.</li>
+                <li data-jmpress="fade" data-translation="Remember that the resulting prototype has to be <i>almost like</i> the final product.">Recordemos que un prototipo es <i>"cercano"</i> al producto final.</li>
+                <li data-jmpress="fade" data-translation="This allows us to omit certain features, and a lot of space for improvements.">Eso nos da licencia para omitir algunas cosas, y espacio para poder mejorar muchas otras.</li>
+                <li data-jmpress="fade" data-translation="The backend doesn't have to be the same as the shown in this presentation.">El backend no necesariamente tiene que ser el presentado en esta charla.</li>
+                <li data-jmpress="fade" data-translation="When thinking in sensors, please consider hardware sensors with  networking capabilities. An Arduino and a sensor can do this and more.">En materia de sensores consideren hardware con capacidades de red. Un Arduino y el correspondiente sensor pueden hacer todo esto y mucho más.</li>
             </ul>
         </section>
 
-        <section>
+        <section data-translation="Presentation material">
             <h1>Material de la charla</h1>
             <ul>
                 <li><a href="http://git.santa.cl/uai/sensormonitor-mockups">Sensor monitor mockups</a></li>
@@ -211,12 +218,12 @@
 		<li><a href="http://git.santa.cl/uai/backend-iot">BackEnd IOT</a></li>
                 <li><a href="http://git.santa.cl/uai/frontend-iot">FrontEnd IOT</a></li>
                 <li><a href="http://git.santa.cl/uai/charla-iot">Presentación charla</a></li>
-                <li data-jmpress="fade"><b>IMPORTANTE:</b> Para clonar los proyectos desde <a href="http://git.santa.cl/uai">git.santa.cl/uai</a> deberán cambiar la dirección IP <i>192.168.1.30</i> por <i>git.santa.cl</i></i>
+                <li data-jmpress="fade" data-translation="IMPORTANT: To clone the project from git.santa.cl/uai you have to change the IP address 192.168.1.30 to git.santa.cl"><b>IMPORTANTE:</b> Para clonar los proyectos desde <a href="http://git.santa.cl/uai">git.santa.cl/uai</a> deberán cambiar la dirección IP <i>192.168.1.30</i> por <i>git.santa.cl</i></i>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section data-translation="Thank you very much">
             <h1>Muchas gracias</h1>
             <br />
             <br />
@@ -230,10 +237,11 @@
             </div>
             <hr />
             <div class="row">
-                <div class="col-md-offset-9 col-md-3 ">
+                <div class="col-md-offset-6 col-md-6 ">
                     <ul class="list-unstyled pull-right">
                         <li>&nbsp;<span class="correo">j<i class="icon-correo"></i>santa.cl</span></li>
                         <li><a href="https://twitter.com/jsantacl">@JSantaCL</a></li>
+                        <li><a href="https://medium.com/@jsantacl">@JSantaCL - Medium</a></li>
                     </ul>
                 </div>
             </div>
@@ -243,7 +251,12 @@
 
 
     </div>
-    <p class="helper">Presione las flechas para poder avanzar o retroceder en la presentación</p>
+    <p class="helper center">
+        <img src="img/arrows.png" class="img-responsive" />
+        Para navegar<br /> use las flechas</p>
+
+<div id="subtitles">
+</div>
 
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
